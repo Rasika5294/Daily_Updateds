@@ -8,14 +8,54 @@
 </head>
 <body>
     <form>
+        <fieldset>
+            <legend>Regestration Area</legend>
+        <h1>Enter Details</h1>
         <label for="Fname" >First Name</label> <BR>
         <input type="text" id="Fname" name="Fname"><BR></BR>
         <label for="Lname">Last Name </label>
         <input type="text" id="Lname" name="Lname"><BR></BR>
         <label for="ContryPreferences"></label>
-        <label>Are you an Indian</label> &nbsp;
-        <input type="radio" id="radiobutton" name="Are you an Indian">
+        <label>Are you an Indian</label> &nbsp;<br>
+        <input type="radio" for="Indian">Yes</lable>
+        <input type="radio" id="radiobutton" name="Yes">
+        <input type="radio">No</lable>
         <input type="radio" id="radiobutton" name="NRI">
+
+        <div>
+            <label for="Phone">Enter Your no</label>
+            <input type="tel" id=" MobilePhone" value="9876543210" name="MobileNumber" pattern="10">
+        </div>
+        <label for="Email">Enter Your Email Id</label>
+        <input type="email" id="email" name="email" value="@gmail.com">  
+        <label for="Password">Enter Password</label>  
+        <input type="password" id="password" name="password">  
+        <input type="hidden" id="RegID" name="RegID" value="121212"> 
+        
+        <div>
+            <label for="City"> select City From Bellow</label>
+            <select id="City" Name="city" size="2"multiple>
+            <option value="Pune">pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            </select>
+        </div>
+        </fieldset>
+
+        <input id="FirstVaccin" type="checkbox" name="Done With FirstVaccin">
+        <label for="Firstvaccin">Done With FirstVaccin</label><br>
+        <input id="SecondVaccin" type="checkbox" name="Done With SecondVaccin">
+        <label for="Secondvaccin">Done With SecondVaccin</label>
+
+        
+        </div> 
+
+      
+            <textarea name="Bio" rows="10" cols="25"></textarea>
+            <lable for="myFile">Select a File</lable>
+            <input type="file" id="file" name="file">
+            <br>
+       
     </form>
 </body>
 </html>
